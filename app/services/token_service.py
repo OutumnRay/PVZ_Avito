@@ -1,0 +1,15 @@
+import jwt
+from datetime import datetime, timedelta
+
+
+SECRET_KEY = "Qs7XoVvE$!f9r@HdYb#k2LzqW^uNm3TP"
+ALGORITHM = "HS256"
+
+def create_token(data: dict, expires_delta: timedelta = timedelta(hours=12)):
+    to_encode = data.copy()
+    expire = datetime.now() + expires_delta
+    to_encode.update({"exp": expire})
+    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+
+def decode_token(token: str):
+    return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
