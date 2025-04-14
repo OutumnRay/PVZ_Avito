@@ -11,17 +11,17 @@
 
 Ссылки на ручки:
 -------------
-POST:
-  http://localhost:8000/auth/dummyLogin
-  http://localhost:8000/auth/register
-  http://localhost:8000/auth/login
-  http://localhost:8000/pvz
-  http://localhost:8000/pvz/{pvz_id}/close_last_reception
-  http://localhost:8000/pvz/{pvz_id}/delete_last_product
-  http://localhost:8000/products
-  http://localhost:8000/receptions
-  
-GET:
-  http://localhost:8000/pvz
+POST:  
+  http://localhost:8000/auth/dummyLogin  
+  http://localhost:8000/auth/register  
+  http://localhost:8000/auth/login  
+  http://localhost:8000/pvz  
+  http://localhost:8000/pvz/{pvz_id}/close_last_reception  
+  http://localhost:8000/pvz/{pvz_id}/delete_last_product  
+  http://localhost:8000/products  
+  http://localhost:8000/receptions  
+    
+GET:  
+  http://localhost:8000/pvz  
   
   
